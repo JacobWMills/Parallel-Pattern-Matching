@@ -1,4 +1,4 @@
-High-Performance-Computing
+Parallel Pattern Matching
 ==========================
 
 Project from final year module, utilising OpenMP and MPI to parallelise the straightforward string matching algorithm.
