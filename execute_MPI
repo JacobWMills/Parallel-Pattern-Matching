@@ -1,0 +1,4 @@
+mpicc -O2 -o project_MPI project_MPI.c
+rm -f inputs
+ln -s $1 inputs
+time mpirun -np 16 ./project_MPI

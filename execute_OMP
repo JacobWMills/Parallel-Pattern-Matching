@@ -1,0 +1,4 @@
+icc -openmp -O2 -o project_OMP project_OMP.c
+rm -f inputs
+ln -s $1 inputs
+time ./project_OMP 
