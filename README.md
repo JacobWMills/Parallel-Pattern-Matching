@@ -3,6 +3,8 @@ Parallel Pattern Matching
 
 Project from final year module, utilising OpenMP and MPI to parallelise the straightforward string matching algorithm.
 
+More detail at jacobmills.co.uk/university-high-performance-computing
+
 The object of the module was to simply get the fastest time for generating correct solutions to a series of string matching problems, providing one OpenMP solution and one MPI solution. I also wrote a non-parallel solution to generate correct result files and use as a baseline time to beat for each parallel solution. The solutions had to come in two flavours: mode 0 finding the first instance of the pattern only, mode 1 finding all instances of the pattern in the text.
 
 My OpenMP solution is fairly straightforward, using parallel for loops in each mode, leaving all the hard work to OpenMP. My MPI solution is more involved, breaking the problem into master and slave processes, where the master process gives individual jobs to the slaves, who return the results to the master.
